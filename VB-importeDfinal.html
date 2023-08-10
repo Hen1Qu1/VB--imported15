@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#VBprint{
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function inicia(){
+               var verifi = sessionStorage.getItem("VBquantid");
+               if(verifi < 1){
+
+               }else { 
+                   window.document.getElementById('VBname').innerHTML = sessionStorage.VBname;
+                   window.document.getElementById('VBvalue').innerHTML = sessionStorage.VBvalue;
+                   window.document.getElementById("quantidade").innerHTML = sessionStorage.VBquantid;   
+                   window.document.getElementById('VBcolor').innerHTML = sessionStorage.VBcolor;
+                   window.document.getElementById('VBsize').innerHTML = sessionStorage.VBsize;
+                   window.document.getElementById('VBmalha').innerHTML = sessionStorage.VBmalha;
+                   window.document.getElementById('VBgene').innerHTML = sessionStorage.VBgene;
+                   window.document.getElementById('VBtype').innerHTML = sessionStorage.VBtype;  
+
+                   window.document.getElementById('VBspace').innerHTML = `----------------------------------------------------------------------------`;
+                }
+           /*---------------------------------------------------------------------------------------------------------------*/
+                
+             var verifi2 = sessionStorage.getItem("VBquantid2");
+             if(verifi2 < 1){
+
+             }else { 
+                  window.document.getElementById('VBname2').innerHTML = `<h1>` + sessionStorage.VBname2 + `</h1>`;
+                  window.document.getElementById('VBvalue2').innerHTML = `<h2>PREÇO: ` + sessionStorage.VBvalue2 + `</h2>`;
+                  window.document.getElementById("quantidade2").innerHTML = `<h2>QUANTIDADE: ` + sessionStorage.VBquantid2 + `</h2>`;   
+                  window.document.getElementById('VBcolor2').innerHTML = `<h2> COR: ` + sessionStorage.VBcolor2 + `</h2>`;
+                  window.document.getElementById('VBsize2').innerHTML = `<h2>TAMANHO: ` + sessionStorage.VBsize2 + `</h2>`;
+                  window.document.getElementById('VBmalha2').innerHTML = `<h2>MALHA: ` + sessionStorage.VBmalha2 + `</h2>`;
+                  window.document.getElementById('VBgene2').innerHTML = `<h2>GENERO: ` + sessionStorage.VBgene2 + `<h2/>`;
+                  window.document.getElementById('VBtype2').innerHTML = `<h2>TIPO: ` + sessionStorage.VBtype2 + `</h2>`;
+
+                  window.document.getElementById('VBspace2').innerHTML = `----------------------------------------------------------------------------`;
+              }
+            /*---------------------------------------------------------------------------------------------------------------*/
+              
+               var verifi3 = sessionStorage.getItem("VBquantid3");
+               if(verifi3 < 1){
+
+               }else { 
+                  window.document.getElementById('VBname3').innerHTML = `<h1>` + sessionStorage.VBname3 + `</h1>`;
+                  window.document.getElementById('VBvalue3').innerHTML = `<h2>PREÇO: ` + sessionStorage.VBvalue3 + `</h2>`;
+                  window.document.getElementById("quantidade3").innerHTML = `<h2>QUANTIDADE: ` + sessionStorage.VBquantid3 + `</h2>`;   
+                  window.document.getElementById('VBcolor3').innerHTML = `<h2> CLUBE/SELEÇÃO: ` + sessionStorage.VBcolor3 + `</h2>`;
+                  window.document.getElementById('VBsize3').innerHTML = `<h2>TAMANHO: ` + sessionStorage.VBsize3 + `</h2>`;
+                  window.document.getElementById('VBmalha3').innerHTML = `<h2>MALHA: ` + sessionStorage.VBmalha3 + `</h2>`;
+                  window.document.getElementById('VBgene3').innerHTML = `<h2>GENERO: ` + sessionStorage.VBgene3 + `<h2/>`;
+                  window.document.getElementById('VBtype3').innerHTML = `<h2>TIPO: ` + sessionStorage.VBtype3 + `</h2>`;
+
+                  window.document.getElementById('VBspace3').innerHTML = `----------------------------------------------------------------------------`;
+               }   
+              /*---------------------------------------------------------------------------------------------------------------*/
+
+                window.document.getElementById('VBvalueFinal').innerHTML = `<h1>PREÇO TOTAL: R$ ` + sessionStorage.VBvalueFinal + `<h1/>`;
+        }
+           
+         window.addEventListener("load", inicia);
+    </script>
+</head>
+<body>
+  <div id="VBprint">  
+   <hgroup id="VBgroup">
+      <div id="VBname"></div>
+      <div id="VBvalue"></div>
+      <div id="quantidade"></div>
+      <div id="VBcolor"></div>
+      <div id="VBsize"></div>
+      <div id="VBmalha"></div>
+      <div id="VBgene"></div>
+      <div id="VBtype"></div>
+
+      <div id="VBspace"></div>
+
+      <div id="VBname2"></div>
+      <div id="VBvalue2"></div>
+      <div id="quantidade2"></div>
+      <div id="VBcolor2"></div>
+      <div id="VBsize2"></div>
+      <div id="VBmalha2"></div>
+      <div id="VBgene2"></div>
+      <div id="VBtype2"></div>
+
+      <div id="VBspace2"></div>
+
+      <div id="VBname3"></div>
+      <div id="VBvalue3"></div>
+      <div id="quantidade3"></div>
+      <div id="VBcolor3"></div>
+      <div id="VBsize3"></div>
+      <div id="VBmalha3"></div>
+      <div id="VBgene3"></div>
+      <div id="VBtype3"></div>
+
+      <div id="VBspace3"></div>
+
+      <div id="VBvalueFinal"></div>
+   </hgroup>
+  </div> 
+</body>
+</html>
